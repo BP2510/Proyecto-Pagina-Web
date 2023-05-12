@@ -1,0 +1,286 @@
+
+<!-- Los comentarios a lo largo del codigo son muy importantes nos ayudan  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Regular Show</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="img/icono.png">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
+body {font-family: "Open Sans"}
+</style>
+</head>
+
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons --> 
+
+
+<div class="w3-bar w3-green w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-black">
+    <h1 class="w3-xxxlarge"><span class="w3-tag w3-green"><b>Regular Show</b></span></h1>  
+    <h6><span class="w3-tag w3-green"><b>De vuelta a un nuevo capitulo</b></span></h6>
+  </header>
+
+
+  <!-- Header -->
+  <header class="w3-center w3-padding-48 w3-black">
+    <h6 class="w3-xlarge"><span class="w3-tag">Es una serie de T.V animada estadounidense creada por J.G. Quintel para Cartoon Network.
+      el programa sigue las aventuras surrealistas de un arrendajo azul llamado Mordecai y un mapache
+      llamado Rigby que trabajan como jardineros en un parque local, el programa cuenta con 8 temporadas
+      y 261 episodios en total. Ha sido bien recibido por el publico y los criticos por igual, por su
+      humor y referencias a la cultura popular de finales del siglo XX.</span>
+    </h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-center w3-wide" id="home">
+    <img class="w3-image" src="img/un_show-removebg-preview.png" alt="Fashion Blog" style="width:100%">
+    <div class="w3-display-center w3-padding-large">
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-black w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h2 class="w3-xxlarge"><b>Mordecai y Rigby</b></h2>
+          <h6><b>"¡Siiii que Siiiiii!"</b></h6>
+        </div>
+
+        <div class="w3-center">
+          <img src="/img/Mordecai y Rigbon.png" alt="Girl Hat" style="width:75%" class="w3-padding-16">
+          <h5><b>Mordecai y Rigby</b> son los personajes principales de la serie animada "Un Show Mas" que se emitio en Cartoon Network.
+          Mordecai es un arrendajo azul y Rigby un mapache de 23 años de edad, son dos de los trabajadores del parque, pero es tan aburrido el trabajo
+        que harian cualquier trabajo para divertirsen y asi poder evadir su trabajo, por eso siempre tienen problemas con su jefe llamado Benson.</h5>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-white" onclick="myFunction('demo1')" id="myBtn"><b>Comments  </b> <span class="w3-tag w3-black"><b>1</b></span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="img/Brayan P..png" style="width:80px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4><b>User86005</b> <span class="w3-opacity w3-medium">May 11 - 2023 - 3:35 PM</span></h4>
+                <q><a>Ha sido la mejor serie animada de cartoon network</a></q>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-black w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h2><b>Benson</b></h2>
+          <h6><b>"¡Estan despedidos!"</b></h6>
+        </div>
+
+        <div class="w3-center">
+          <img src="img/benson-removebg-preview-removebg-preview.png" alt="Runway" style="width:50%" class="w3-padding-16">
+          <h5><b>Benson</b> es un personaje principal de la serie animada "Un Show Mas", es una maquina expendedora de chicle y ademas es el gerente del parque donde trabajan
+          Mordecai y Rigby. Benson es muy gruñon y tiene un caracter fuerte, pero tambien es responsable y trabaja duro.</h5>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-white" onclick="myFunction('demo3')"><b>Comments  </b> <span class="w3-tag w3-black"><b>1</b></span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/User133.png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4><b>User90780</b><span class="w3-opacity w3-medium"> Mayo 15 - 2023 - 7:22 PM</span></h4>
+                <q>Que aburrido eres Benson</q>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+           </div>
+            <div class="w3-row w3-margin-bottom">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="img/jg_quintel-removebg-preview.png" alt="Jane" style="width:100%" class="w3-grayscale">
+        <div class="w3-container w3-green">
+          <h3><b>J.G Quintel</b></h3>
+          <h5><b>James Garland (nacio el 13 de septiembre de 1982 en Hanford, California - Estados Unidos), es un animador, actor de voz,
+            director, guionista, dibujante y productor estadounidense, mas conocido por ser el creador y el director creativo de la serie
+            animada Regular Show.</b>
+          </h5>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h3><b>Personajes Principales</b></h3>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-green">
+          <li class="w3-padding-16">
+            <img src="img/skips-removebg-preview-removebg-preview.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span><b>Skips</b></span>
+            <br>
+            <span>Es un yeti que trabaja en el parque como jardinero y se encarga del mantenimiento y tareas forzadas.</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/papaleta-removebg-preview-removebg-preview1.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span><b>Papaleta</b></span>
+            <br>
+            <span>Es una piruleta humanoide, es conocido por su personalidad optimista.</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/musculoso-removebg-preview-removebg-preview.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span><b>Musculoso</b></span>
+            <br>
+            <span>Trabaja como jardinero en el parque junto a Mordecai y Rigby</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/fantasmin-removebg-preview-removebg-preview.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span><b>Fantasmin</b></span>
+            <br>
+            <span>Fantasmin trabaja junto a su mejor amigo musculoso como jardinero</span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+     
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h3><b>Tags</b></h3>
+        </div>
+        <div class="w3-container w3-green">
+          <p>
+            <span class="w3-tag w3-light-grey w3-margin-bottom">Comedia</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Serie</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Animacion</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Risas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Estadounidense</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Mordecai</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Rigby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Regular Show</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Muñecos que hablan</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Personajes</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Adolecentes</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Diversion</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Vocabulario grotesco</span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h3><b>Interpretes de Personajes Principales</b></h3>
+        </div>
+        <div class="w3-row-padding w3-green">
+          <div class="w3-col s6">
+            <p><img src="img/jg_quintel-removebg-preview.png" alt="Jeans" style="width:100%"></p>
+            <p><img src="img/William_Salyers-removebg-preview.png" alt="Jeans" style="width:100%"></p>
+          </div>
+          <div class="w3-col s6">
+            <p><img src="img/Sam_Marin-removebg-preview.png" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
+            <p><img src="img/Mark_Hamill-removebg-preview.png" alt="Jeans" style="width:100%"></p>
+         </div>
+        </div>
+      </div>
+      <hr>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h3><b>Suscribirse</b></h3>
+        </div>
+        <div class="w3-container w3-green">
+          <h6><p>Ingrese su correo electrónico a continuación y reciba notificaciones sobre las últimas publicaciones del blog</p></h6>
+          <p><input class="w3-input w3-border" type="text" placeholder="Ingrese e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red"><b>Suscribirse</b></button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-green">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide"><b>Suscribirse</b></h2>
+      <p>Únase a mi lista de correo para recibir actualizaciones sobre las últimas publicaciones del blog y otras cosas.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Ingrese e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'"><b>Suscribirse</b></button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container " style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i><b>Regresar al inicio</b></a>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
